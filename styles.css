@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #333; /* Dark background color for dark mode */
+    background-color: #070F2B; /* Dark background color for dark mode */
     color: #fff; /* Light text color for dark mode */
     padding: 20px;
 }
@@ -19,7 +19,7 @@ body {
     flex-wrap: wrap;
     margin: auto;
     padding: 20px;
-    background-color: #444; /* Slightly lighter container background */
+    background-color: #1B1A55; /* Slightly lighter container background */
     border-radius: 10px; /* Rounded corners for the container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
 }
@@ -27,22 +27,21 @@ body {
 img {
     display: block;
     border-radius: 50%; /* Rounded corners for images */
-    max-width: 50%; /* Ensure images don't overflow container */
+    max-width: 30%; /* Ensure images don't overflow container */
     height: auto;
     margin: 0 auto;
 }
-
+@media (max-width:600px){
+    #name{
+        display:flex;
+    }
+}
 p {
     margin-bottom: 20px;
 }
 #center{
     display: flex;
     justify-content: center;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
 }
 
 th, td {
@@ -53,12 +52,12 @@ th, td {
 }
 
 th {
-    background-color: #666; /* Darker table header background color */
+    background-color: #535C91; /* Darker table header background color */
 }
 
 button {
     margin: 20px;
-    background-color: #444; /* Button background color */
+    background-color: #535C91; /* Button background color */
     color: #fff; /* Button text color */
     border: none;
     padding: 10px 20px;
@@ -68,7 +67,7 @@ button {
 }
 
 button:hover {
-    background-color: #555; /* Darker button background color on hover */
+    background-color:#98a1d5; /* Darker button background color on hover */
 }
 
 @media screen and (max-width: 600px) {
@@ -100,4 +99,35 @@ button:hover {
     }
 }
 
+.container_skills {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #9290C3;
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
 
